@@ -6,11 +6,11 @@ header{
     grid-area: head;
 }
 
-nav.global{
+#global-nav{
     grid-area: nav_g;
 }
 
-nav.local{
+#local-nav{
     grid-area: nav_l;
 }
 

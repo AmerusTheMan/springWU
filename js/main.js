@@ -7,6 +7,7 @@ function copy_element_by_id(source_id, destination_id){
 }
 
 
-copy_element_by_id("global-nav", "local-nav");
+copy_element_by_id("global-nav", "mobile-global-nav");
+copy_element_by_id("local-nav", "mobile-local-nav");
 
 

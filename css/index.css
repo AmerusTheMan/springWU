@@ -1,5 +1,7 @@
 
 
+
+
 /*desktop css*/
 @media screen and (min-width:800px){
     .wrapper{
@@ -32,11 +34,46 @@
         "main";
     }
 
-    #global-nav{
-        display: none;
-
-    }
+    #global-nav,
     #local-nav{
         display: none;
     }
+    
+    #mobile-global-nav,
+    #mobile-local-nav{
+        display: block;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: blueviolet;
+        top: 100vh;
+        transition: 0.5s;
+
+        .show-menu{
+            top: 20vh;
+        }
+        z-index: 10;
+    }
+    
+    #mobile-global-nav.show-menu,
+    #mobile-local-nav.show-menu{
+        top: 20vh;
+    }
+
+    .fade-layer{
+        display: block;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 5;
+    }
+
+    .hidden{
+        display: none;
+    }
+    
+
 }

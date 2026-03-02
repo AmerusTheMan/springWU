@@ -1,3 +1,8 @@
+:root{
+    --edge_padding: 1rem;
+}
+
+
 body{
     margin: 0;
 }
@@ -14,7 +19,108 @@ header{
     grid-area: nav_l;
 }
 
+.menu-btns{
+    grid-area: menu_btns;
+    padding: var(--edge_padding)
+}
+
+.nav-btns,
+.aside-btn{
+    width: 3rem;
+}
+
+h1{
+    padding: var(--edge_padding);
+}
+
 main{
     grid-area: main;
-    padding: 1rem;
+    padding: var(--edge_padding);
+}
+
+
+/*desktop css*/
+@media screen and (min-width:801px){
+    .wrapper{
+        display: grid;
+        grid-template-columns: 20vw 1fr 20vw;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "head head head"
+        "nav_g main nav_l";
+    }
+
+    #mobile-global-nav{
+        display: none;
+    }
+
+    #mobile-local-nav{
+        display: none;
+    }
+
+    .menu-btns{
+        display:none;
+    }
+}
+
+/*mobile css*/
+@media screen and (max-width:800px){
+    .wrapper{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: auto auto auto 0 ;
+        grid-template-areas:
+        "head"
+        "menu_btns"
+        "main"
+        "global-nav"
+        "local-nav"
+        ;
+    }
+
+    #global-nav,
+    #local-nav{
+        display: none;
+    }
+    
+    #mobile-global-nav,
+    #mobile-local-nav{
+        display: block;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: blueviolet;
+        top: 100vh;
+        transition: 0.5s;
+
+        z-index: 10;
+    }
+    #mobile-global-nav.show-menu,
+    #mobile-local-nav.show-menu{
+        top: 20vh;
+    }
+    
+    
+
+    .fade-layer{
+        display: block;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 5;
+    }
+
+    .menu-btns{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hidden{
+        display: none;
+    }
+    
+
 }

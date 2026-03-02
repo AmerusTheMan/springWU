@@ -52,3 +52,10 @@ copy_element_by_id("local-nav", "mobile-local-nav");
 
 let fade_layer = document.querySelector(".fade-layer");
 fade_layer.addEventListener("click", hide_menus);
+
+
+let navButton = document.querySelector(".nav-btn");
+let asideButton = document.querySelector(".aside-btn");
+
+navButton.addEventListener("click", show_mobile_nav);
+asideButton.addEventListener("click", show_mobile_aside);

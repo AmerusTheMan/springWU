@@ -21,12 +21,12 @@ header{
 
 .menu-btns{
     grid-area: menu_btns;
-    padding: var(--edge_padding)
+    padding-left: var(--edge_padding);
+    padding-right: var(--edge_padding);
 }
 
-.nav-btns,
-.aside-btn{
-    width: 3rem;
+i.material-icons{
+    font-size: 2rem;
 }
 
 h1{
@@ -73,8 +73,6 @@ main{
         "head"
         "menu_btns"
         "main"
-        "global-nav"
-        "local-nav"
         ;
     }
 

@@ -1,15 +1,51 @@
+
+/*Main font*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
 :root{
     --edge_padding: 1rem;
+    --bg_color: #0f0f23;
+    --text_color: #cccccc;
+    --link_color: #009900;
+    --link_highlight_colour: #63ea63;
 }
 
 
 body{
     margin: 0;
+    background-color: var(--bg_color);
+    color: var(--text_color);
+
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: large;
 }
 
 header{
     grid-area: head;
+    padding: var(--edge_padding)
 }
+
+main{
+    grid-area: main;
+    padding: var(--edge_padding);
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+a{
+    color: var(--link_color);
+}
+a:hover{
+    color: var(--link_highlight_colour);
+}
+
+
 
 #global-nav{
     grid-area: nav_g;
@@ -29,21 +65,14 @@ i.material-icons{
     font-size: 2rem;
 }
 
-h1{
-    padding: var(--edge_padding);
-}
 
-main{
-    grid-area: main;
-    padding: var(--edge_padding);
-}
 
 
 /*desktop css*/
 @media screen and (min-width:801px){
     .wrapper{
         display: grid;
-        grid-template-columns: 20vw 1fr 20vw;
+        grid-template-columns: 20vw 60fr 20vw;
         grid-template-rows: auto auto;
         grid-template-areas: 
         "head head head"

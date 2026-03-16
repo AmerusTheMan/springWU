@@ -1,0 +1,38 @@
+.event {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom-style: solid;
+    padding: 0.5rem;
+    margin: 3rem, 0;
+    
+    h3.event-name{
+        margin: 0;
+        display: inline;
+        cursor: default;
+    }
+
+    
+
+
+    .event-info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        .event-left-part {
+            max-width: 50%;
+        }
+        
+        .event-right-part {
+            .date{
+                text-align: end;
+            }
+        }
+    }
+    
+}
+
+
+
+

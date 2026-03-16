@@ -7,8 +7,9 @@
     --edge_padding: 1rem;
     --bg_color: #0f0f23;
     --text_color: #cccccc;
-    --link_color: #009900;
+    --link_color: #00cc00;
     --link_highlight_colour: #63ea63;
+    --hx-color: #ffffff;
 }
 
 
@@ -45,6 +46,9 @@ a:hover{
     color: var(--link_highlight_colour);
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: var(--hx-color);
+}
 
 
 #global-nav{
@@ -72,11 +76,11 @@ i.material-icons{
 @media screen and (min-width:801px){
     .wrapper{
         display: grid;
-        grid-template-columns: 20vw 60fr 20vw;
+        grid-template-columns: 10vw 15vw 50vw 15vw 10vw;
         grid-template-rows: auto auto;
         grid-template-areas: 
-        "head head head"
-        "nav_g main nav_l";
+        ". head head head . "
+        ". nav_g main nav_l. ";
     }
 
     #mobile-global-nav{
@@ -145,9 +149,10 @@ i.material-icons{
         justify-content: space-between;
     }
 
-    .hidden{
-        display: none;
-    }
     
+    
+}
 
+.hidden{
+    display: none !important;
 }

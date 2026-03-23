@@ -46,9 +46,9 @@ function hide_menus(){
     local_menu.classList.remove("show-menu");
 }
 
-function test_func(){
-    console.log("hello world");
-}
+
+
+
 
 copy_element_by_id("global-nav", "mobile-global-nav");
 copy_element_by_id("local-nav", "mobile-local-nav");
@@ -57,11 +57,9 @@ copy_element_by_id("local-nav", "mobile-local-nav");
 let fade_layer = document.querySelector(".fade-layer");
 let navButton = document.querySelector(".nav-btn");
 let asideButton = document.querySelector(".aside-btn");
-let events = document.querySelector(".event");
 
 
 fade_layer.addEventListener("click", hide_menus);
 navButton.addEventListener("click", show_mobile_nav);
 asideButton.addEventListener("click", show_mobile_aside);
-events.addEventListener("click", test_func);
 

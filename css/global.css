@@ -53,10 +53,14 @@ h1, h2, h3, h4, h5, h6 {
 
 
 #global-nav{
+    display:flex;
+    justify-content: left;
     grid-area: nav_g;
 }
 
 #local-nav{
+    display:flex;
+    justify-content: right;
     grid-area: nav_l;
 }
 
@@ -68,6 +72,8 @@ h1, h2, h3, h4, h5, h6 {
 
 i.material-icons{
     font-size: 2rem;
+    border-radius: 20%;
+    border-style: solid;
 }
 
 
@@ -84,10 +90,7 @@ i.material-icons{
         ". nav_g main nav_l. ";
     }
 
-    #mobile-global-nav{
-        display: none;
-    }
-
+    #mobile-global-nav,
     #mobile-local-nav{
         display: none;
     }
@@ -125,7 +128,7 @@ i.material-icons{
         top: 100vh;
         transition: 0.35s;
         border-radius: 30px;
-
+        font-size: largemedium;
         z-index: 10;
     }
     #mobile-global-nav.show-menu,
@@ -156,10 +159,6 @@ i.material-icons{
 }
 
 
-.disable-scrolling{
-    overflow: hidden !important;
-    height: 100%;
-}
 
 .hidden{
     display: none !important;

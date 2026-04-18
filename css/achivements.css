@@ -4,7 +4,7 @@
         height: auto;
         img{
             width: 100%;
-            border-radius: 10%;
+            border-radius: 10cqw;
             float: left;
         }
     }  
@@ -14,11 +14,11 @@
 /*Desktop css*/
 @media screen and (min-width:801px){
     .achievement-block{
-        height: fit-content;
+        height: auto;
         overflow: hidden;
         img{
             width: 50%;
-            border-radius: 10%;
+            border-radius: 3cqw;
             float: left;
             margin-right: 1rem;
         }

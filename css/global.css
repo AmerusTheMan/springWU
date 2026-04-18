@@ -7,13 +7,11 @@
     --edge_padding: 1rem;
     --bg_color: #0f0f23;
     --text_color: #cccccc;
-    --link_color: #00cc00;
-    --link_highlight_colour: #63ea63;
+    --link_color: #20ec20;
+    --link_highlight_colour: #83ff83;
     --hx-color: #ffffff;
     --mobile-menu-bg-color: #0f0f23;
-    --max-mobile-width: 800px;
 }
-
 
 body{
     margin: 0;

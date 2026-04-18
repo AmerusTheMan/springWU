@@ -19,9 +19,8 @@ body{
     color: var(--text_color);
 
     font-family: "Roboto Mono", monospace;
-    font-optical-sizing: auto;
     font-style: normal;
-}
+}   
 
 header{
     grid-area: head;
@@ -40,6 +39,8 @@ ul{
 
 a{
     color: var(--link_color);
+    font-size: large;
+
 }
 a:hover{
     color: var(--link_highlight_colour);
@@ -52,13 +53,13 @@ h1, h2, h3, h4, h5, h6 {
 
 #global-nav{
     display:flex;
-    justify-content: left;
+    justify-content: center;
     grid-area: nav_g;
 }
 
 #local-nav{
     display:flex;
-    justify-content: right;
+    justify-content: center;
     grid-area: nav_l;
 }
 
@@ -73,6 +74,8 @@ i.material-icons{
     border-radius: 20%;
     border-style: solid;
 }
+
+
 
 
 
@@ -97,6 +100,21 @@ i.material-icons{
         display:none;
     }
 }
+
+/*desktop-small css*/
+@media screen and (min-width:801px) and (max-width:1420px){
+    .wrapper{
+        display: grid;
+        grid-template-columns: 25vw 50vw 25vw;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "head head head "
+        "nav_g main nav_l";
+    }
+
+    
+}
+
 
 /*mobile css*/
 @media screen and (max-width:800px){
@@ -126,7 +144,6 @@ i.material-icons{
         top: 100vh;
         transition: 0.35s;
         border-radius: 30px;
-        font-size: largemedium;
         z-index: 10;
     }
     #mobile-global-nav.show-menu,
